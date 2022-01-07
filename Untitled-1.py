@@ -9,3 +9,9 @@ for i in f:
         sum+=1
         #[::-1]
 print(sum)
+a=int(input())
+b=int(input())
+for i in f:
+    srez=i[:i.rfind('.'):-1]
+    if a<=int(srez[::-1])<=b:
+        print(i)         
